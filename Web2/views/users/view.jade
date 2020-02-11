@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+  h1 User profile
+  table.table
+    tr
+      th Name
+      th Phone
+      th
+    each val in user
+      tr 
+        td=val.name
+        td=val.phone
+        td
